@@ -4,7 +4,8 @@
   "cumulative_hash_count": 10,
   "daily_hash_count": 0,
   "daily_target": "30-50 when evidence supports it",
-  "status": "success",
+  "status": "needs_source_access",
+  "blocker": "The public MalwareBazaar recent-hash export provides volume but not the per-hash family and confirmation metadata required by this repository. The metadata-rich API/export requires an authenticated source access path.",
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb"
   }
