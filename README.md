@@ -32,20 +32,6 @@ database that can be imported years later.
 - If fewer than 30 hashes meet the evidence standard, the agent publishes fewer
   rather than padding the daily file with weak indicators.
 
-## Agent-maintained update schedule
-
-A recurring Codex agent reviews the threat landscape every day at approximately
-9:00 AM America/Los_Angeles time. It uses the MalwareBazaar recent SHA-256
-export for intake, then checks individual sample records and analyst evidence
-before publishing anything. ESET and PRODAFT research are used for
-corroboration when available. Nothing is installed or scheduled on the
-repository owner's computer.
-
-The agent appends verified hashes to the cumulative files and replaces the daily
-delta files. A failed or ambiguous review leaves the last known-good hash files
-untouched. The complete decision policy is documented in
-[`AGENT_POLICY.md`](AGENT_POLICY.md).
-
 ## Important limitation
 
 An exact hash blocks one exact file. Malware operators frequently rebuild files,
