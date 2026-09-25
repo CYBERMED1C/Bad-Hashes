@@ -1,9 +1,12 @@
 {
   "last_checked_utc": "2026-09-25T03:00:00Z",
+  "last_push_utc": "2026-09-25T03:00:00Z",
   "cumulative_hash_count": 10,
   "daily_hash_count": 10,
   "daily_archive_path": "2026/09/24",
   "daily_target": "30-50 when evidence supports it",
+  "repo_health": "partial",
+  "validation": "pass",
   "status": "success_below_target",
   "status_detail": "10 verified hashes published for this review date; no additional hashes met the evidence standard.",
   "blocker": "The public MalwareBazaar recent-hash export provides volume but not the per-hash family and confirmation metadata required by this repository. The metadata-rich API/export requires an authenticated source access path.",
