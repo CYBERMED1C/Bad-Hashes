@@ -1,6 +1,13 @@
 name: Update confirmed bad hashes
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-hashes.yml"
+      - "config/**"
+      - "scripts/**"
   schedule:
     - cron: "17 9 * * *"
       timezone: "America/Los_Angeles"
