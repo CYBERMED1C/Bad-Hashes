@@ -22,11 +22,18 @@ verification evidence for every published entry.
 
 ## Archive structure
 
-Daily files are organized by UTC date using:
+Each review date gets its own day folder inside the year and month:
 
 ```
-YYYY/MM/DD/
+2026/
+└── 09/
+    ├── 24/
+    ├── 25/
+    ├── 26/
+    └── ...
 ```
+
+The full pattern is `YYYY/MM/DD/`.
 
 ## Inclusion policy
 
