@@ -37,6 +37,3 @@ database that can be imported years later.
 An exact hash blocks one exact file. Malware operators frequently rebuild files,
 which creates new hashes. This list is a focused defensive supplement, not a
 replacement for antivirus, EDR, behavioral detection, or threat hunting.
-
-If you believe a hash is a false positive, open an issue with the hash and the
-reason it should be reviewed.
