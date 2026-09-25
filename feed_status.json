@@ -1,14 +1,14 @@
 {
-  "last_checked_utc": "2026-09-25T03:32:18Z",
-  "last_push_utc": "2026-09-25T03:32:18Z",
-  "cumulative_hash_count": 14,
-  "daily_hash_count": 14,
-  "daily_archive_path": "2026/09/24",
+  "last_checked_utc": "2026-09-25T16:01:51Z",
+  "last_push_utc": "2026-09-25T16:01:51Z",
+  "cumulative_hash_count": 17,
+  "daily_hash_count": 3,
+  "daily_archive_path": "2026/09/25",
   "daily_target": "30-50 when evidence supports it",
   "repo_health": "partial",
   "validation": "pass",
   "status": "success_below_target",
-  "status_detail": "14 verified hashes published for this review date; 4 current hashes were corroborated from Daily-Threat-Intel/SANS; no other candidates met the evidence standard.",
+  "status_detail": "3 verified hashes published for this review date; all were corroborated from the current SANS Macfinger ClickFix report.",
   "blocker": "The public MalwareBazaar recent-hash export provides volume but not the per-hash family and confirmation metadata required by this repository. The metadata-rich API/export requires an authenticated source access path.",
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb"
