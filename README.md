@@ -20,6 +20,13 @@ verification evidence for every published entry.
   daily delta in comma-separated format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
+## Documentation
+
+- [`AGENT_POLICY.md`](AGENT_POLICY.md) — evidence, inclusion, and maintenance
+  rules.
+- [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) — source attribution and
+  licensing notices.
+
 ## Inclusion policy
 
 - Exact SHA-256 file hashes only.
