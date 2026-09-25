@@ -11,7 +11,7 @@ research. This project intentionally favors confidence over volume.
 - [`hashes_sha256_comma.txt`](hashes_sha256_comma.txt) - the same hashes in a
   comma-separated copy/paste format.
 - [`feed_status.json`](feed_status.json) - last successful daily check, current
-  hash count, and upstream source commit.
+  hash count, and source commit recorded by the agent.
 
 ## Inclusion policy
 
@@ -31,18 +31,22 @@ are excluded.
 SHA-256 is used instead of MD5 because it is the stronger and more portable
 choice for modern blocklists.
 
-## Update schedule
+## Agent-maintained update schedule
 
-GitHub Actions checks the approved upstream source every day at approximately
-9:17 AM America/Los_Angeles time. It updates `feed_status.json` after every
-successful check, so the repository receives a daily verification commit even
-when the approved hash list is unchanged. A failed download or validation stops
-the update and leaves the last known-good files untouched.
+A recurring Codex agent reviews the threat landscape every day at approximately
+9:00 AM America/Los_Angeles time. The agent researches current malware activity,
+checks the original analyst publication and reuse license, validates every hash,
+updates the files, and pushes the result to GitHub. Nothing is installed or
+scheduled on the repository owner's computer.
+
+The agent updates `feed_status.json` after every successful review, even when no
+new hash qualifies. A failed or ambiguous review leaves the last known-good hash
+files untouched. The complete decision policy is documented in
+[`AGENT_POLICY.md`](AGENT_POLICY.md).
 
 The initial feed contains ESET-confirmed Amadey and Stealc samples published as
-part of Operation Endgame. See [`config/sources.json`](config/sources.json) for
-the exact source and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for its
-license.
+part of Operation Endgame. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)
+for the source license.
 
 ## Important limitation
 

@@ -1,6 +1,8 @@
 {
-  "last_checked_utc": "2026-09-24T12:00:00Z",
+  "last_checked_utc": "2026-09-25T03:00:00Z",
+  "maintained_by": "Codex recurring agent",
   "published_hash_count": 10,
+  "status": "success",
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb"
   }
