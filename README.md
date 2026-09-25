@@ -1,7 +1,7 @@
 # Bad Hashes
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
-provides a historical dataset and a latest daily delta, with provenance and
+provides a historical dataset and dated daily archives, with provenance and
 verification evidence for every published entry.
 
 ## Downloads
@@ -12,20 +12,21 @@ verification evidence for every published entry.
   one per line.
 - [`hashes_sha256_all_comma.txt`](hashes_sha256_all_comma.txt) — all active
   hashes in comma-separated SIEM copy/paste format.
-- [`daily_hashes.csv`](daily_hashes.csv) — hashes added in the latest review,
-  with provenance and evidence.
-- [`daily_hashes_sha256.txt`](daily_hashes_sha256.txt) — latest daily delta,
-  one hash per line.
-- [`daily_hashes_sha256_comma.txt`](daily_hashes_sha256_comma.txt) — latest
-  daily delta in comma-separated format.
+- [`2026/09/24/daily_hashes.csv`](2026/09/24/daily_hashes.csv) — daily
+  archive with provenance and evidence.
+- [`2026/09/24/daily_hashes_sha256.txt`](2026/09/24/daily_hashes_sha256.txt)
+  — daily archive, one hash per line.
+- [`2026/09/24/daily_hashes_sha256_comma.txt`](2026/09/24/daily_hashes_sha256_comma.txt)
+  — daily archive in comma-separated SIEM format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
-## Documentation
+## Archive structure
 
-- [`AGENT_POLICY.md`](AGENT_POLICY.md) — evidence, inclusion, and maintenance
-  rules.
-- [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) — source attribution and
-  licensing notices.
+Daily files are organized by UTC date using:
+
+```
+YYYY/MM/DD/
+```
 
 ## Inclusion policy
 
