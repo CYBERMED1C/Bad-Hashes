@@ -38,12 +38,12 @@ jobs:
       - name: Commit verified changes
         shell: bash
         run: |
-          git add hashblock.csv hashes_sha256.txt hashes_sha256_comma.txt
+          git add feed_status.json hashblock.csv hashes_sha256.txt hashes_sha256_comma.txt
           if git diff --cached --quiet; then
             echo "No approved hash changes were found."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh confirmed bad hashes"
+          git commit -m "chore: record daily hash feed check"
           git push

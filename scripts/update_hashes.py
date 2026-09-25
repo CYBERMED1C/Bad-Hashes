@@ -108,12 +108,14 @@ def build(config_path: Path, source_root: Path, output_dir: Path, now: datetime)
         raise ValueError("max_hashes must be between 1 and 100")
 
     records_by_hash: dict[str, Record] = {}
+    source_commits: dict[str, str] = {}
     for source in config["sources"]:
         source_path = source_root / source["local_path"]
         if not source_path.is_file():
             raise FileNotFoundError(f"Approved source file is missing: {source_path}")
 
         commit, published_at = git_file_metadata(source_root, source["local_path"])
+        source_commits[source["id"]] = commit
         age_days = (now - published_at).total_seconds() / 86400
         if age_days < -1:
             raise ValueError(f"Source publication date is in the future: {source_path}")
@@ -152,6 +154,15 @@ def build(config_path: Path, source_root: Path, output_dir: Path, now: datetime)
     write_if_changed(
         output_dir / "hashes_sha256_comma.txt",
         ",".join(record.sha256 for record in records) + "\n",
+    )
+    status = {
+        "last_checked_utc": now.isoformat().replace("+00:00", "Z"),
+        "published_hash_count": len(records),
+        "source_commits": source_commits,
+    }
+    write_if_changed(
+        output_dir / "feed_status.json",
+        json.dumps(status, indent=2, sort_keys=True) + "\n",
     )
     print(f"Published {len(records)} high-confidence SHA-256 hashes")
     return 0

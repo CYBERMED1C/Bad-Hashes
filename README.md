@@ -10,6 +10,8 @@ research. This project intentionally favors confidence over volume.
 - [`hashes_sha256.txt`](hashes_sha256.txt) - one SHA-256 hash per line.
 - [`hashes_sha256_comma.txt`](hashes_sha256_comma.txt) - the same hashes in a
   comma-separated copy/paste format.
+- [`feed_status.json`](feed_status.json) - last successful daily check, current
+  hash count, and upstream source commit.
 
 ## Inclusion policy
 
@@ -32,9 +34,10 @@ choice for modern blocklists.
 ## Update schedule
 
 GitHub Actions checks the approved upstream source every day at approximately
-9:17 AM America/Los_Angeles time. It creates a commit only when the resulting
-hash list changes. A failed download or validation stops the update and leaves
-the last known-good files untouched.
+9:17 AM America/Los_Angeles time. It updates `feed_status.json` after every
+successful check, so the repository receives a daily verification commit even
+when the approved hash list is unchanged. A failed download or validation stops
+the update and leaves the last known-good files untouched.
 
 The initial feed contains ESET-confirmed Amadey and Stealc samples published as
 part of Operation Endgame. See [`config/sources.json`](config/sources.json) for
