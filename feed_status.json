@@ -1,14 +1,14 @@
 {
-  "last_checked_utc": "2026-09-25T16:01:51Z",
-  "last_push_utc": "2026-09-25T16:01:51Z",
+  "last_checked_utc": "2026-09-26T16:01:55Z",
+  "last_push_utc": "2026-09-26T16:01:55Z",
   "cumulative_hash_count": 17,
-  "daily_hash_count": 3,
-  "daily_archive_path": "2026/09/25",
+  "daily_hash_count": 0,
+  "daily_archive_path": "2026/09/26",
   "daily_target": "30-50 when evidence supports it",
   "repo_health": "partial",
   "validation": "pass",
-  "status": "success_below_target",
-  "status_detail": "3 verified hashes published for this review date; all were corroborated from the current SANS Macfinger ClickFix report.",
+  "status": "success_no_new_hashes",
+  "status_detail": "No new SHA-256 hashes met the evidence standard for this review date. The current Daily-Threat-Intel archive contained one malicious C2 IP, which was excluded because this repository publishes SHA-256 file hashes only.",
   "blocker": "The public MalwareBazaar recent-hash export provides volume but not the per-hash family and confirmation metadata required by this repository. The metadata-rich API/export requires an authenticated source access path.",
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb"
