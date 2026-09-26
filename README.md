@@ -3,7 +3,7 @@
 > **Repository health**
 > - **Last push (UTC):** 2026-09-26 16:01
 > - **Overall health:** **PARTIAL** — published data is valid; the daily batch is below target because no additional hashes met the evidence standard.
-> - **Validation:** **PASS** — 17 cumulative hashes and 0 daily hashes; CSV, line-separated, and comma-separated formats are synchronized. CSV, line-separated, and comma-separated formats are synchronized.
+> - **Validation:** **PASS** — 17 cumulative hashes and 0 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
 > - **Latest archive:** [2026/09/26](2026/09/26)
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
