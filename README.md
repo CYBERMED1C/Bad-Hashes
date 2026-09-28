@@ -1,10 +1,10 @@
 # Bad Hashes
 
 > **Repository health**
-> - **Last push (UTC):** 2026-09-27 16:00
-> - **Overall health:** **PARTIAL** — published data is valid; the daily batch is below target because no additional hashes met the evidence standard.
-> - **Validation:** **PASS** — 18 cumulative hashes and 1 daily hash; CSV, line-separated, and comma-separated formats are synchronized.
-> - **Latest archive:** [2026/09/27](2026/09/27)
+> - **Last push (UTC):** 2026-09-28 16:01
+> - **Overall health:** **PARTIAL** — published data is valid; the daily batch is below target because only seven candidates met the evidence standard.
+> - **Validation:** **PASS** — 25 cumulative hashes and 7 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
+> - **Latest archive:** [2026/09/28](2026/09/28)
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
 provides a historical dataset and dated daily archives, with provenance and
@@ -18,11 +18,11 @@ verification evidence for every published entry.
   one per line.
 - [`hashes_sha256_all_comma.txt`](hashes_sha256_all_comma.txt) — all active
   hashes in comma-separated SIEM copy/paste format.
-- [`2026/09/27/daily_hashes.csv`](2026/09/27/daily_hashes.csv) — daily
+- [`2026/09/28/daily_hashes.csv`](2026/09/28/daily_hashes.csv) — daily
   archive with provenance and evidence.
-- [`2026/09/27/daily_hashes_sha256.txt`](2026/09/27/daily_hashes_sha256.txt)
+- [`2026/09/28/daily_hashes_sha256.txt`](2026/09/28/daily_hashes_sha256.txt)
   — daily archive, one hash per line.
-- [`2026/09/27/daily_hashes_sha256_comma.txt`](2026/09/27/daily_hashes_sha256_comma.txt)
+- [`2026/09/28/daily_hashes_sha256_comma.txt`](2026/09/28/daily_hashes_sha256_comma.txt)
   — daily archive in comma-separated SIEM format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
