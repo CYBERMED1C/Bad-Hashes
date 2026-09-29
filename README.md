@@ -1,9 +1,9 @@
 # Bad Hashes
 
 > **Repository health**
-> - **Last push (UTC):** 2026-09-29 16:02
-> - **Overall health:** **PARTIAL** — published data is valid; no new hash qualified because today’s current candidates were network indicators rather than file hashes.
-> - **Validation:** **PASS** — 25 cumulative hashes and 0 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
+> - **Last push (UTC):** 2026-09-29 16:20
+> - **Overall health:** **HEALTHY** — 35 newly verified malware SHA-256 hashes published after the expanded second-pass review.
+> - **Validation:** **PASS** — 60 cumulative hashes and 35 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
 > - **Latest archive:** [2026/09/29](2026/09/29)
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
