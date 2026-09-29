@@ -1,20 +1,21 @@
 {
-  "last_checked_utc": "2026-09-28T16:01:11Z",
-  "last_push_utc": "2026-09-28T16:01:11Z",
+  "last_checked_utc": "2026-09-29T16:02:01Z",
+  "last_push_utc": "2026-09-29T16:02:01Z",
   "cumulative_hash_count": 25,
-  "daily_hash_count": 7,
-  "daily_archive_path": "2026/09/28",
+  "daily_hash_count": 0,
+  "daily_archive_path": "2026/09/29",
   "daily_target": "30-50 when evidence supports it",
   "repo_health": "partial",
   "validation": "pass",
-  "status": "success_below_target",
-  "status_detail": "7 verified hashes published for this review date: 2 Kothamine samples documented by Malwarebytes and 5 SparroWocky samples added by ESET Research. One URLhaus SHA-256 candidate was withheld because the live URLhaus record does not display the submitted hash and provides no named malware family; the bare MalwareBazaar export was not used without metadata.",
-  "blocker": "The public MalwareBazaar recent-hash export provides volume but not the per-hash family and confirmation metadata required by this repository. The URLhaus candidate also failed exact-hash provenance reconciliation. Additional entries require metadata-rich authenticated access or direct source publications.",
+  "status": "success_no_new_hashes",
+  "status_detail": "No SHA-256 hashes qualified for this review date. Daily-Threat-Intel published five current ThreatFox indicators, all IPv4 botnet C2 pivots; the public MalwareBazaar recent export contained bare hashes without family, verdict, or campaign metadata and was not used.",
+  "blocker": "The current candidate set contained no SHA-256 file indicators. The public MalwareBazaar recent-hash export remains metadata-free, so additional hashes require a metadata-rich authenticated source or a direct authoritative publication.",
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb",
     "eset-famoussparrow-sparrowocky": "17baf44964a77368e9149f4f593eb098beddf1c5",
-    "daily-threat-intel-2026-09-28": "77564f9e783ba8eb2f54d1ed53cc76b9f1a80b3f"
+    "daily-threat-intel-2026-09-28": "77564f9e783ba8eb2f54d1ed53cc76b9f1a80b3f",
+    "daily-threat-intel-2026-09-29": "a202d47f8656e6fdd2159288f6921beddf6192f0"
   },
-  "reviewed_source_count": 18,
-  "corroborated_hash_count": 7
+  "reviewed_source_count": 12,
+  "corroborated_hash_count": 0
 }
