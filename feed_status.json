@@ -1,6 +1,6 @@
 {
-  "last_checked_utc": "2026-09-29T16:20:00Z",
-  "last_push_utc": "2026-09-29T16:20:00Z",
+  "last_checked_utc": "2026-09-29T16:45:19Z",
+  "last_push_utc": "2026-09-29T16:45:19Z",
   "cumulative_hash_count": 60,
   "daily_hash_count": 35,
   "daily_archive_path": "2026/09/29",
@@ -8,7 +8,7 @@
   "repo_health": "healthy",
   "validation": "pass",
   "status": "success",
-  "status_detail": "Expanded second-pass review published 35 new SHA-256 file indicators from the current MalwareBazaar browse records dated 2026-09-29. Accepted families were Mirai, ValleyRAT, VShell, AgentTesla, FormBook, PureLogsStealer, SnakeKeylogger, KONNI, and XWorm/SalatStealer; each record supplied an exact SHA-256 plus a named MalwareBazaar family signature and malware tags. Daily-Threat-Intel supplied only five IPv4 ThreatFox indicators and was correctly excluded from this hash-only feed. Bare hashes from the public MalwareBazaar export, unsigned/unknown records, and non-file indicators were rejected.",
+  "status_detail": "Production audit completed. The repository contains 35 new source-confirmed SHA-256 file indicators from current MalwareBazaar records dated 2026-09-29. Each accepted record supplied an exact SHA-256, named malware-family signature, timestamp, and malware tags. Daily-Threat-Intel supplied five IPv4 indicators and was correctly excluded. Bare export hashes, records without a named family, non-file indicators, PUP/adware, miners, and dual-use tools were rejected. Independent exact-hash corroboration was not established for this MalwareBazaar batch and is reported separately rather than overstated.",
   "blocker": null,
   "source_commits": {
     "eset-operation-endgame-amadey-stealc": "fa0bdcf30fcd42a36135677fb89fdf16486b0bfb",
@@ -18,5 +18,7 @@
     "malwarebazaar-browse-2026-09-29": "2026-09-29T16:17:00Z"
   },
   "reviewed_source_count": 15,
-  "corroborated_hash_count": 35
+  "source_confirmed_hash_count": 35,
+  "corroborated_hash_count": 0,
+  "independently_corroborated_hash_count": 0
 }

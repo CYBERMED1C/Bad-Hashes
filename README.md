@@ -1,8 +1,8 @@
 # Bad Hashes
 
 > **Repository health**
-> - **Last push (UTC):** 2026-09-29 16:20
-> - **Overall health:** **HEALTHY** — 35 newly verified malware SHA-256 hashes published after the expanded second-pass review.
+> - **Last push (UTC):** 2026-09-29 16:45
+> - **Overall health:** **HEALTHY** — 35 newly source-confirmed malware SHA-256 hashes published after the expanded second-pass review.
 > - **Validation:** **PASS** — 60 cumulative hashes and 35 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
 > - **Latest archive:** [2026/09/29](2026/09/29)
 
