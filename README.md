@@ -1,10 +1,10 @@
 # Bad Hashes
 
 > **Repository health**
-> - **Last push (UTC):** 2026-09-29 16:45
-> - **Overall health:** **HEALTHY** — 35 newly source-confirmed malware SHA-256 hashes published after the expanded second-pass review.
-> - **Validation:** **PASS** — 60 cumulative hashes and 35 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
-> - **Latest archive:** [2026/09/29](2026/09/29)
+> - **Last push (UTC):** 2026-09-30 16:15
+> - **Overall health:** **HEALTHY** — 38 newly source-confirmed malicious SHA-256 file hashes published from CERT Polska's active Android toll-fraud investigation.
+> - **Validation:** **PASS** — 98 cumulative hashes and 38 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
+> - **Latest archive:** [2026/09/30](2026/09/30)
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
 provides a historical dataset and dated daily archives, with provenance and
@@ -18,11 +18,11 @@ verification evidence for every published entry.
   one per line.
 - [`hashes_sha256_all_comma.txt`](hashes_sha256_all_comma.txt) — all active
   hashes in comma-separated SIEM copy/paste format.
-- [`2026/09/29/daily_hashes.csv`](2026/09/29/daily_hashes.csv) — daily
+- [`2026/09/30/daily_hashes.csv`](2026/09/30/daily_hashes.csv) — daily
   archive with provenance and evidence.
-- [`2026/09/29/daily_hashes_sha256.txt`](2026/09/29/daily_hashes_sha256.txt)
+- [`2026/09/30/daily_hashes_sha256.txt`](2026/09/30/daily_hashes_sha256.txt)
   — daily archive, one hash per line.
-- [`2026/09/29/daily_hashes_sha256_comma.txt`](2026/09/29/daily_hashes_sha256_comma.txt)
+- [`2026/09/30/daily_hashes_sha256_comma.txt`](2026/09/30/daily_hashes_sha256_comma.txt)
   — daily archive in comma-separated SIEM format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
