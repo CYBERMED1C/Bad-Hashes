@@ -1,11 +1,13 @@
-# Bad Hashes
-
 ## Live status
 
 🟢 Operational
 
 **Last push:** 2026-10-02 02:54 UTC  
 **Overall health:** Healthy
+
+---
+
+# Bad Hashes
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
 provides a historical dataset and dated daily archives, with provenance and
