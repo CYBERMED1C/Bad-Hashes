@@ -1,10 +1,11 @@
 # Bad Hashes
 
-> **Repository health**
-> - **Last push (UTC):** 2026-10-01 16:07
-> - **Overall health:** **HEALTHY** — 31 newly source-confirmed malicious SHA-256 file hashes published from active Huntress, Microsoft, and SANS investigations.
-> - **Validation:** **PASS** — 129 cumulative hashes and 31 daily hashes; CSV, line-separated, and comma-separated formats are synchronized.
-> - **Latest archive:** [2026/10/01](2026/10/01)
+## Live status
+
+🟢 Operational
+
+**Last push:** 2026-10-02 02:54 UTC  
+**Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
 provides a historical dataset and dated daily archives, with provenance and
