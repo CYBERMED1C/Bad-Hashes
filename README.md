@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-03 16:10 UTC  
+**Last push:** 2026-10-03 22:19 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -13,23 +13,46 @@ verification evidence for every published entry.
 
 ## Downloads
 
-- [`hashblock.csv`](hashblock.csv) — cumulative database with malware family,
-  source, evidence, and status.
-- [`hashes_sha256_all.txt`](hashes_sha256_all.txt) — all active hashes,
-  one per line.
-- [`hashes_sha256_all_comma.txt`](hashes_sha256_all_comma.txt) — all active
-  hashes in comma-separated SIEM copy/paste format.
-- [`2026/10/03/daily_hashes.csv`](2026/10/03/daily_hashes.csv) — daily
-  archive with provenance and evidence.
-- [`2026/10/03/daily_hashes_sha256.txt`](2026/10/03/daily_hashes_sha256.txt)
-  — daily archive, one hash per line.
-- [`2026/10/03/daily_hashes_sha256_comma.txt`](2026/10/03/daily_hashes_sha256_comma.txt)
-  — daily archive in comma-separated SIEM format.
+Current cumulative weekly bucket:
+
+- [`cumulative-hashes/2026/10/week-1/hashblock.csv`](cumulative-hashes/2026/10/week-1/hashblock.csv) — CSV records added during October week 1, with malware family, source, evidence, and status.
+- [`cumulative-hashes/2026/10/week-1/hashes_sha256.txt`](cumulative-hashes/2026/10/week-1/hashes_sha256.txt) — active hashes from October week 1, one per line.
+- [`cumulative-hashes/2026/10/week-1/hashes_sha256_comma.txt`](cumulative-hashes/2026/10/week-1/hashes_sha256_comma.txt) — active October week 1 hashes in comma-separated SIEM copy/paste format.
+
+Latest daily archive:
+
+- [`2026/10/03/daily_hashes.csv`](2026/10/03/daily_hashes.csv) — daily archive with provenance and evidence.
+- [`2026/10/03/daily_hashes_sha256.txt`](2026/10/03/daily_hashes_sha256.txt) — daily archive, one hash per line.
+- [`2026/10/03/daily_hashes_sha256_comma.txt`](2026/10/03/daily_hashes_sha256_comma.txt) — daily archive in comma-separated SIEM format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
-## Archive structure
+## Cumulative weekly organization
 
-Each review date gets its own day folder inside the year and month:
+The cumulative collection is divided into small weekly buckets instead of one continuously growing root file. Together, every weekly bucket forms the complete cumulative database.
+
+```
+cumulative-hashes/
+└── 2026/
+    ├── 09/
+    │   ├── week-4/
+    │   └── week-5/
+    └── 10/
+        └── week-1/
+```
+
+Each weekly folder contains a full CSV plus line-separated and comma-separated SHA-256 blocklists. Weeks are assigned by the UTC `added_utc` date:
+
+- `week-1`: days 1–7
+- `week-2`: days 8–14
+- `week-3`: days 15–21
+- `week-4`: days 22–28
+- `week-5`: days 29 through the end of the month
+
+For example, hashes added on October 3 go into `2026/10/week-1/`, while hashes added on November 10 go into `2026/11/week-2/`. Existing hashes never move between buckets.
+
+## Daily archive structure
+
+Each review date also keeps its own daily folder inside the year and month:
 
 ```
 2026/
