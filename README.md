@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-02 16:09 UTC  
+**Last push:** 2026-10-03 16:10 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -19,11 +19,11 @@ verification evidence for every published entry.
   one per line.
 - [`hashes_sha256_all_comma.txt`](hashes_sha256_all_comma.txt) — all active
   hashes in comma-separated SIEM copy/paste format.
-- [`2026/10/02/daily_hashes.csv`](2026/10/02/daily_hashes.csv) — daily
+- [`2026/10/03/daily_hashes.csv`](2026/10/03/daily_hashes.csv) — daily
   archive with provenance and evidence.
-- [`2026/10/02/daily_hashes_sha256.txt`](2026/10/02/daily_hashes_sha256.txt)
+- [`2026/10/03/daily_hashes_sha256.txt`](2026/10/03/daily_hashes_sha256.txt)
   — daily archive, one hash per line.
-- [`2026/10/02/daily_hashes_sha256_comma.txt`](2026/10/02/daily_hashes_sha256_comma.txt)
+- [`2026/10/03/daily_hashes_sha256_comma.txt`](2026/10/03/daily_hashes_sha256_comma.txt)
   — daily archive in comma-separated SIEM format.
 - [`feed_status.json`](feed_status.json) — current review status and counts.
 
