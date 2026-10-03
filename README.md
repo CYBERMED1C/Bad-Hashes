@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-03 22:19 UTC  
+**Last push:** 2026-10-03 23:14 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -15,9 +15,9 @@ verification evidence for every published entry.
 
 Current cumulative weekly bucket:
 
-- [`cumulative-hashes/2026/10/week-1/hashblock.csv`](cumulative-hashes/2026/10/week-1/hashblock.csv) — CSV records added during October week 1, with malware family, source, evidence, and status.
-- [`cumulative-hashes/2026/10/week-1/hashes_sha256.txt`](cumulative-hashes/2026/10/week-1/hashes_sha256.txt) — active hashes from October week 1, one per line.
-- [`cumulative-hashes/2026/10/week-1/hashes_sha256_comma.txt`](cumulative-hashes/2026/10/week-1/hashes_sha256_comma.txt) — active October week 1 hashes in comma-separated SIEM copy/paste format.
+- [`2026/cumulative-hashes/10/week-1/hashblock.csv`](2026/cumulative-hashes/10/week-1/hashblock.csv) — CSV records added during October week 1, with malware family, source, evidence, and status.
+- [`2026/cumulative-hashes/10/week-1/hashes_sha256.txt`](2026/cumulative-hashes/10/week-1/hashes_sha256.txt) — active hashes from October week 1, one per line.
+- [`2026/cumulative-hashes/10/week-1/hashes_sha256_comma.txt`](2026/cumulative-hashes/10/week-1/hashes_sha256_comma.txt) — active October week 1 hashes in comma-separated SIEM copy/paste format.
 
 Latest daily archive:
 
@@ -28,16 +28,18 @@ Latest daily archive:
 
 ## Cumulative weekly organization
 
-The cumulative collection is divided into small weekly buckets instead of one continuously growing root file. Together, every weekly bucket forms the complete cumulative database.
+Inside each year folder, the cumulative collection is divided into small weekly buckets instead of one continuously growing root file. Together, every weekly bucket forms the complete cumulative database.
 
 ```
-cumulative-hashes/
-└── 2026/
-    ├── 09/
-    │   ├── week-4/
-    │   └── week-5/
-    └── 10/
-        └── week-1/
+2026/
+├── cumulative-hashes/
+│   ├── 09/
+│   │   ├── week-4/
+│   │   └── week-5/
+│   └── 10/
+│       └── week-1/
+└── 10/
+    └── 03/  (daily archive)
 ```
 
 Each weekly folder contains a full CSV plus line-separated and comma-separated SHA-256 blocklists. Weeks are assigned by the UTC `added_utc` date:
