@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-03 23:14 UTC  
+**Last push:** 2026-10-03 23:17 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -50,7 +50,7 @@ Each weekly folder contains a full CSV plus line-separated and comma-separated S
 - `week-4`: days 22–28
 - `week-5`: days 29 through the end of the month
 
-For example, hashes added on October 3 go into `2026/10/week-1/`, while hashes added on November 10 go into `2026/11/week-2/`. Existing hashes never move between buckets.
+For example, hashes added on October 3 go into `2026/cumulative-hashes/10/week-1/`, while hashes added on November 10 go into `2026/cumulative-hashes/11/week-2/`. Existing hashes never move between buckets.
 
 ## Daily archive structure
 

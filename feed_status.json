@@ -1,6 +1,6 @@
 {
-  "last_checked_utc": "2026-10-03T23:14:48Z",
-  "last_push_utc": "2026-10-03T23:14:48Z",
+  "last_checked_utc": "2026-10-03T23:17:45Z",
+  "last_push_utc": "2026-10-03T23:17:45Z",
   "cumulative_hash_count": 207,
   "daily_hash_count": 40,
   "daily_archive_path": "2026/10/03",
@@ -8,7 +8,7 @@
   "repo_health": "healthy",
   "validation": "pass",
   "status": "success",
-  "status_detail": "Repository cleanup completed successfully. All 207 cumulative records were preserved unchanged while the three weekly buckets moved beneath the 2026 year folder: 2026/cumulative-hashes/09/week-4, 2026/cumulative-hashes/09/week-5, and 2026/cumulative-hashes/10/week-1. The former top-level cumulative-hashes tree was removed. Daily archives remain in YYYY/MM/DD. Counts, formats, uniqueness, cross-bucket membership, README links, and status metadata validated before publication.",
+  "status_detail": "Repository cleanup completed successfully. All 207 cumulative records remain unchanged in three weekly buckets beneath the 2026 year folder: 2026/cumulative-hashes/09/week-4, 2026/cumulative-hashes/09/week-5, and 2026/cumulative-hashes/10/week-1. The former top-level cumulative-hashes tree was removed. README links and examples, daily archives, counts, formats, uniqueness, cross-bucket membership, and status metadata validated before publication.",
   "blocker": null,
   "reviewed_source_count": 19,
   "reachable_source_count": 16,
