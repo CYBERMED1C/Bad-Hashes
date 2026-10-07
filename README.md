@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-07 16:12 UTC  
+**Last push:** 2026-10-07 16:14 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -67,7 +67,8 @@ Each review date also keeps its own daily folder inside the year and month:
     ├── 03/
     ├── 04/
     ├── 05/
-    └── 06/
+    ├── 06/
+    └── 07/
 ```
 
 The full pattern is `YYYY/MM/DD/`.
