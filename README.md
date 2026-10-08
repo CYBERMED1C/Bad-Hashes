@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-07 16:14 UTC  
+**Last push:** 2026-10-08 16:05 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -15,15 +15,15 @@ verification evidence for every published entry.
 
 Current cumulative weekly bucket:
 
-- [`2026/cumulative-hashes/10/week-1/hashblock.csv`](2026/cumulative-hashes/10/week-1/hashblock.csv) — CSV records added during October week 1, with malware family, source, evidence, and status.
-- [`2026/cumulative-hashes/10/week-1/hashes_sha256.txt`](2026/cumulative-hashes/10/week-1/hashes_sha256.txt) — active hashes from October week 1, one per line.
-- [`2026/cumulative-hashes/10/week-1/hashes_sha256_comma.txt`](2026/cumulative-hashes/10/week-1/hashes_sha256_comma.txt) — active October week 1 hashes in comma-separated SIEM copy/paste format.
+- [`2026/cumulative-hashes/10/week-2/hashblock.csv`](2026/cumulative-hashes/10/week-2/hashblock.csv) — CSV records added during October week 2, with malware family, source, evidence, and status.
+- [`2026/cumulative-hashes/10/week-2/hashes_sha256.txt`](2026/cumulative-hashes/10/week-2/hashes_sha256.txt) — active hashes from October week 2, one per line.
+- [`2026/cumulative-hashes/10/week-2/hashes_sha256_comma.txt`](2026/cumulative-hashes/10/week-2/hashes_sha256_comma.txt) — active October week 2 hashes in comma-separated SIEM copy/paste format.
 
 Latest daily archive:
 
-- [`2026/10/07/daily_hashes.csv`](2026/10/07/daily_hashes.csv) — daily archive with provenance and evidence.
-- [`2026/10/07/daily_hashes_sha256.txt`](2026/10/07/daily_hashes_sha256.txt) — daily archive, one hash per line.
-- [`2026/10/07/daily_hashes_sha256_comma.txt`](2026/10/07/daily_hashes_sha256_comma.txt) — daily archive in comma-separated SIEM format.
+- [`2026/10/08/daily_hashes.csv`](2026/10/08/daily_hashes.csv) — daily archive with provenance and evidence.
+- [`2026/10/08/daily_hashes_sha256.txt`](2026/10/08/daily_hashes_sha256.txt) — daily archive, one hash per line.
+- [`2026/10/08/daily_hashes_sha256_comma.txt`](2026/10/08/daily_hashes_sha256_comma.txt) — daily archive in comma-separated SIEM format.
 
 ## Cumulative weekly organization
 
@@ -36,9 +36,10 @@ Inside each year folder, the cumulative collection is divided into small weekly 
 │   │   ├── week-4/
 │   │   └── week-5/
 │   └── 10/
-│       └── week-1/
+│       ├── week-1/
+│       └── week-2/
 └── 10/
-    └── 07/  (daily archive)
+    └── 08/  (daily archive)
 ```
 
 Each weekly folder contains a full CSV plus line-separated and comma-separated SHA-256 blocklists. Weeks are assigned by the UTC `added_utc` date:
@@ -68,7 +69,8 @@ Each review date also keeps its own daily folder inside the year and month:
     ├── 04/
     ├── 05/
     ├── 06/
-    └── 07/
+    ├── 07/
+    └── 08/
 ```
 
 The full pattern is `YYYY/MM/DD/`.
