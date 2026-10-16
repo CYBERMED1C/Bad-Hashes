@@ -4,7 +4,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-16 16:07 UTC  
+**Last push:** 2026-10-16 16:09 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -47,7 +47,8 @@ Inside each year folder, the cumulative collection is divided into small weekly 
     ├── 12/
     ├── 13/
     ├── 14/
-    └── 15/  (latest daily archive)
+    ├── 15/
+    └── 16/  (latest daily archive)
 ```
 
 Each weekly folder contains a full CSV plus line-separated and comma-separated SHA-256 blocklists. Weeks are assigned by the UTC `added_utc` date:
