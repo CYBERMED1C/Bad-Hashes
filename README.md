@@ -9,7 +9,7 @@
 
 🟢 Operational
 
-**Last push:** 2026-10-22 16:07 UTC  
+**Last push:** 2026-10-23 16:05 UTC  
 **Overall health:** Healthy
 
 A curated SHA-256 malware blocklist for defensive detection. The repository
@@ -26,9 +26,9 @@ Current cumulative weekly bucket:
 
 Latest daily archive:
 
-- [`2026/10/22/daily_hashes.csv`](2026/10/22/daily_hashes.csv) — daily archive with provenance and evidence.
-- [`2026/10/22/daily_hashes_sha256.txt`](2026/10/22/daily_hashes_sha256.txt) — daily archive, one hash per line.
-- [`2026/10/22/daily_hashes_sha256_comma.txt`](2026/10/22/daily_hashes_sha256_comma.txt) — daily archive in comma-separated SIEM format.
+- [`2026/10/23/daily_hashes.csv`](2026/10/23/daily_hashes.csv) — daily archive with provenance and evidence.
+- [`2026/10/23/daily_hashes_sha256.txt`](2026/10/23/daily_hashes_sha256.txt) — daily archive, one hash per line.
+- [`2026/10/23/daily_hashes_sha256_comma.txt`](2026/10/23/daily_hashes_sha256_comma.txt) — daily archive in comma-separated SIEM format.
 
 ## Cumulative weekly organization
 
@@ -60,7 +60,8 @@ Inside each year folder, the cumulative collection is divided into small weekly 
     ├── 19/
     ├── 20/
     ├── 21/
-    └── 22/  (latest daily archive)
+    ├── 22/
+    └── 23/  (latest daily archive)
 ```
 
 Each weekly folder contains a full CSV plus line-separated and comma-separated SHA-256 blocklists. Weeks are assigned by the UTC `added_utc` date:
@@ -105,7 +106,8 @@ Each review date also keeps its own daily folder inside the year and month:
     ├── 19/
     ├── 20/
     ├── 21/
-    └── 22/  (latest daily archive)
+    ├── 22/
+    └── 23/  (latest daily archive)
 ```
 
 The full pattern is `YYYY/MM/DD/`.
